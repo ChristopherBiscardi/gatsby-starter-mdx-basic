@@ -1,3 +1,8 @@
+# Arbitrary Code Execution Branch
+
+This branch shows an example of arbitrary code execution using an
+MDXProvider, a custom `code` component, and MDX code blocks.
+
 # Gatsby Starter MDX Basic
 
 View this starter [live on Netlify](https://gatsby-starter-mdx-basic.netlify.com/)
