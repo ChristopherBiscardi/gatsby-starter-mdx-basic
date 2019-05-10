@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
 
 import Header from './header'
 import './layout.css'
+import Image from './image'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,7 +19,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <MDXProvider components={{ img: Image }}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -29,7 +31,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </>
+      </MDXProvider>
     )}
   />
 )
