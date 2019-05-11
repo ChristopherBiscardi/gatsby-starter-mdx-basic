@@ -15,7 +15,6 @@ import Img from 'gatsby-image'
  */
 
 const Image = ({ src = 'gatsby-astronaut.png', ...props }) => {
-  console.table(props)
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {
