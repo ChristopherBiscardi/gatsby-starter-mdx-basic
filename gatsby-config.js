@@ -12,6 +12,7 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: { default: path.resolve('./src/components/layout.js') },
+        remarkPlugins: [require('remark-unwrap-images')],
       },
     },
     'gatsby-plugin-react-helmet',
@@ -26,8 +27,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
-      }
+        path: `${__dirname}/src/pages`,
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
