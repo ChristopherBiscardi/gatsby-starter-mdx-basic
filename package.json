@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "author": "Chris Biscardi <chris@christopherbiscardi.com>",
   "dependencies": {
-    "@mdx-js/mdx": "^1.1.5",
-    "@mdx-js/react": "^1.1.5",
-    "gatsby": "^2.13.50",
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "gatsby": "^2.20.24",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-mdx": "^1.0.0",
