@@ -1,0 +1,20 @@
+This is a sample module which uses <> { props.pageContext.frontmatter.mainContext } </> to specify different values.
+
+You can use <> { props.pageContext.frontmatter.mainContext } </> more than once and it will work just fine.
+
+
+1. first
+2. second <> { props.pageContext.frontmatter.mainContext } </>
+3. third <> { props.pageContext.frontmatter.mainContext } </>
+
+Complete <> { props.pageContext.frontmatter.mainContext } </>
+
+## Interpolation check from module
+
+The following should render as **ABC**.
+<>{"ABC"}</>
+<>{undefined}</>
+<>{null}</>
+<>{props.test}</>
+
+It all happens in the back-end. The the final check for speling.

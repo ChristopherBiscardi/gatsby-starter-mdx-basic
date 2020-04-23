@@ -1,0 +1,23 @@
+This is a sample module which uses <>{props.mainContext}</> to specify different values.
+
+You can use <>{props.mainContext}</> more than once and it will work just fine.
+
+
+1. first
+2. second <>{props.mainContext}</>
+3. third <>{props.mainContext}</>
+
+
+## Done
+
+Complete <>{props.mainContext}</>
+
+## Interpolation check from module
+
+The following should render as **ABC**.
+<>{"ABC"}</>
+<>{undefined}</>
+<>{null}</>
+<>{props.test}</>
+
+this this should show error.
